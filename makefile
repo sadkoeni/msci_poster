@@ -1,4 +1,2 @@
-latexmk -pdf conference_poster_2.tex
+latexmk -c -pdf msci_poster.tex
 
-clean:
-	rm -r *.aux
