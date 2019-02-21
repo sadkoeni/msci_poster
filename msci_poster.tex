@@ -36,7 +36,7 @@
 
 \usepackage{booktabs} % Top and bottom rules for tables
 
-\graphicspath{{./../_saves/}} % Location of the graphics files
+\graphicspath{{figures/}} % Location of the graphics files
 
 \usecaptiontemplate{\small\structure{\insertcaptionname~\insertcaptionnumber: }\insertcaption} % A fix for figure numbering
 
@@ -44,7 +44,7 @@
 %	TITLE SECTION 
 %----------------------------------------------------------------------------------------
 
-\title{\huge Resolution Studies of the High Granularity Calorimeter of the CMS experiment at the LHC at CERN} % Poster title
+\title{\huge Photon pair-production Resolution Studies of the High Granularity Calorimeter of the CMS experiment at the LHC at CERN} % Poster title
 
 \author{Stephan Koenigstorfer, Johannes Prosser} % Author(s)
 
@@ -78,36 +78,36 @@
 
 \begin{block}{Introduction}
 
-		The Large Hadron Collider (LHC) is currently in the middle of the second Long Shutdown, which is used as part of a larger program to upgrade the collider to the High Luminosity LHC by the mid 2020s. In its first two runs (2010-2012, 2015-2018), the collider has achieved integrated luminosities of
-		\begin{column}{0.4\textwidth}
+		The Large Hadron Collider (LHC) is currently in the middle of the second Long Shutdown, which is used as part of a larger program to upgrade the collider to the High Luminosity LHC by the mid 2020s. The main goal of coming upgrades to the LHC is to increase the instantaneous luminosities which the collider can produce, in order to zero in on anomalies in the data. Figure \ref*{timeline} shows the past and expected future luminosities achieved. The big jump in instantaneous luminosity during the Third Long Shutdown (LS3), is the switch to the High Luminosity LHC (HL-LHC). 
+		\begin{column}{0.6\textwidth}
 		\begin{figure}
 			\includegraphics[width=\linewidth]{LHC_upgrade_timeplan.png}
-			\caption{Some Caption}
+				\caption{Instantaneous luminosity (red dots) and Integrated luminosity (blue line) of the LHC, during various phases in the upgrade cycle.}
+			\label{timeline}
 		\end{figure}
 		\end{column}
 		\begin{column}{0.01\textwidth}\end{column}
-		\begin{column}{0.4\textwidth}
-			\begin{figure}
-			\includegraphics[width=\linewidth]{LHC_upgrade_timeplan.png}
-			\caption{Some Caption}
-			\end{figure}
+		\begin{column}{0.29\textwidth}
+				\\As part of the H-LHC upgrade, the dectector systems on the experiments are also being upgraded. This project is specifically concerned with the High Granularity Calorimeter (HGCAL) of the CMS
 		\end{column}
 
+		experiment, and studying how the new detector will respond to photons with different detector settings. The detector will produce data at rates exceeding 100TB/s, which far exceeds the capacity of the read out channels. Therefore, a decision whether or not to read out the data (trigger decision) has to be made on detector within a small latency. The studies in presented in this poster aim to inform the development of such a trigger algorithm.
 
-
-
-
-
-	The LHC is currently being upgraded in order to achieve higher luminosities. As part of this upgrade, the spatial resolution of the calorimeter of the CMS experiment is receiving a significant upgrade. This new versions is called the High Granularity Calorimeter (HGCAL). 
-
-	In this new upgrade the rate of data production (~100TB/s) far exceeds the capacity of the the output channel, therefore a decision must be taken to trigger the calorimeter. This has to be done on detector within a very small latency. In order to achieve this, we are studying the response of the new detector to two photons, specifically how its resolution varies in different parts of the detector and for different cone sizes. 
 \end{block}
 
 %----------------------------------------------------------------------------------------
 %	Background
 %----------------------------------------------------------------------------------------
             
-\begin{block}{Background}
+\begin{block}{Background: The CMS HGCAL}
+
+	The CMS HGCAL is radially symmetric every 60$^\circ$ around the beam axis. Longitudinally, it is made up of 52 layers, most of which use hexagonal Silicone Wafers as the detector material. On the Silicon wafers there are hexagonal subdivisions of area either 
+
+\end{block}
+
+\begin{block}{Background: Pileup}
+
+
 
 	There is pileup. Basically there are always some particles flying around as a background. These also get caught in the detector, but have nothing to do with the event being observed. This is called pileup.
 
@@ -115,6 +115,7 @@
 
 	The detector geometry is usually destribed in reduced coordinates and in eta and phi. Eta is some complicated shit. 
 \end{block}
+
 
 %----------------------------------------------------------------------------------------
 %	Methods
